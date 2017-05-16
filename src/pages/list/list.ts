@@ -31,6 +31,7 @@ export class ListPage {
     item.checked = true;
       console.log(item);
       console.log('got It');
+      this.items2.update(item.$key, { checked: true });
   }
 
   delete = (item)=> {
