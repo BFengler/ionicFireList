@@ -29,16 +29,13 @@ export class ListPage {
   }
   gotIt = (item)=>{
     item.checked = true;
-      console.log(item);
-      console.log('got It');
       this.items2.update(item.$key, { checked: true });
   }
 
   delete = (item)=> {
     this.items2.remove(item);
   }
-
-  
+ 
 }
 
 
