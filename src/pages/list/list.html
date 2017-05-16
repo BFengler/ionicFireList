@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ 
+
+<h4>My list</h4>
+<ion-list>
+   <ion-item>
+    <ion-label color="primary" stacked>Add new product to the list</ion-label>
+    <ion-input type="text" #newname placeholder="Product name"></ion-input>
+  </ion-item>
+
+  <button ion-button block outline (click)="addProduct(newname.value)">Add Product</button>
+</ion-list>
+  
+
+  <ion-list>
+    {{items2 | async | json}}
+  <ion-item-sliding *ngFor="let item of items2 | async ">
+    
+    <ion-item>
+      <ion-label>{{item.product}}</ion-label>
+      <ion-checkbox color="blue" checked="{{item.checked}}" (click)="gotIt(item)"></ion-checkbox>
+    </ion-item>
+    <ion-item-options side="right">
+      <button ion-button color="danger" (click)="delete(item)">
+        <ion-icon name="ios-close-circle-outline" ></ion-icon>
+        Delete
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+
+
+
+</ion-content>
