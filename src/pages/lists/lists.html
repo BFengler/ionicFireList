@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>My Lists</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h4>My lists</h4>
+<ion-list>
+   <ion-item>
+    <ion-label color="primary" stacked>Add new product to the list</ion-label>
+    <ion-input type="text" #newname placeholder="Product name"></ion-input>
+  </ion-item>
+
+  <button ion-button block outline (click)="addList(newname.value)">Add Product</button>
+</ion-list>
+  
+   {{items | async | json}}
+
+</ion-content>

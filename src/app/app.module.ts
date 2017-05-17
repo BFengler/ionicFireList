@@ -15,6 +15,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule, AngularFireAuth } from 'angularfire2/auth';
+import { ListsPage } from '../pages/lists/lists';
 
 //Firebase keys
 import{ firebaseConfig } from '../services/key';
@@ -25,6 +26,7 @@ import{ firebaseConfig } from '../services/key';
   declarations: [
     MyApp,
     HomePage,
+    ListsPage,
     ListPage
   ],
   imports: [
@@ -38,7 +40,8 @@ import{ firebaseConfig } from '../services/key';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    ListsPage
   ],
   providers: [
     StatusBar,

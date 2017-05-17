@@ -12,14 +12,14 @@ export class ListPage {
   
   
   items2: FirebaseListObservable<any[]>;
-  value: FirebaseObjectObservable<any>;
+  // value: FirebaseObjectObservable<any>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, db: AngularFireDatabase) {
      this.items2 = db.list('/items');
-     this.value = db.object('/items');
+     //this.value = db.object('/items');
 
      console.log(this.items2);
-     console.log(this.value);
+     //console.log(this.value);
   }
 
   addProduct  = (newItem: string)=>{
@@ -28,8 +28,12 @@ export class ListPage {
     }
   }
   gotIt = (item)=>{
-    item.checked = true;
+    //item.checked = true;
+    if(item.checked == true){
+      this.items2.update(item.$key, { checked: false });
+    }else{
       this.items2.update(item.$key, { checked: true });
+    }
   }
 
   delete = (item)=> {
