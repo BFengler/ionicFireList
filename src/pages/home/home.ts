@@ -11,7 +11,7 @@ import * as firebase from 'firebase/app';
 
 
 
-export class MyModule { }
+//export class MyModule { }
 
 @Component({
   selector: 'page-home',

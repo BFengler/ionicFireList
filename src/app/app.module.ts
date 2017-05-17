@@ -14,15 +14,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { AngularFireAuthModule, AngularFireAuth } from 'angularfire2/auth';
+//import { AngularFireAuthModule, AngularFireAuth } from 'angularfire2/auth';
 
-export const firebaseConfig = {
-  apiKey: "AIzaSyAclXb70vSUym2yQ5vib1pnYKUEc65pDPA",
-      authDomain: "angular-2-9c84d.firebaseapp.com",
-      databaseURL: "https://angular-2-9c84d.firebaseio.com",
-      storageBucket: "angular-2-9c84d.appspot.com",
-      messagingSenderId: "107357073027"
-};
+//Firebase keys
+import{ firebaseConfig } from '../services/key';
+
 
 
 @NgModule({
