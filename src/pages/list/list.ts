@@ -30,6 +30,7 @@ export class ListPage implements OnInit {
   ngOnInit(){
     this.listId = this.navParams.data;
     console.log(this.listId);
+    
   }
 
   addProduct  = (newItem: string)=>{

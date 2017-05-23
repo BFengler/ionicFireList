@@ -27,7 +27,11 @@ plugins/
 plugins/android.json
 plugins/ios.json
 www/
+<<<<<<< HEAD
 services/key.ts
+=======
+src/services/key.ts
+>>>>>>> 92c0f51faaed0e6902ab5d587702a8a6610a6e70
 $RECYCLE.BIN/
 
 .DS_Store
