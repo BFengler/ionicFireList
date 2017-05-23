@@ -26,9 +26,10 @@ export class HomePage {
   constructor(public navCtrl: NavController ,public afAuth: AngularFireAuth  ) {
       this.user = afAuth.authState;
      
+     
 
      console.log(this.afAuth);
-     console.log(this.afAuth.auth);
+     console.log(this.afAuth.auth.currentUser);
   }
 
   login() {
