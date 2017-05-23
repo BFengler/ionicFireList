@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+
+
+  <button ion-button icon-right outline (click)="login()" >
+    Log in with google account 
+    <ion-icon name="logo-google"></ion-icon>
+  </button>
+ 
+  <button ion-button outline (click)="logout()">Logout</button>
+
+  <!--<ion-grid fixed>
+
+     <ion-row align-items-center>
+      <ion-col col-12 col-sm-6 col-md-3>
+         <div class="box" >
+        
+         </div>
+      </ion-col>
+      <ion-col col-12 col-sm-6 col-md-3>
+        <div class="box" >
+        
+         </div>
+      </ion-col>
+
+      <ion-col col-12  col-sm-6 col-md-3 >
+          <div class="box" >
+        
+         </div>
+      </ion-col>
+      <ion-col col-12 col-sm-6 col-md-3 >
+        <div class="box" >
+        
+         </div>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row align-items-center>
+      <ion-col> <div class="box"></div></ion-col>
+      <ion-col> <div class="box"></div></ion-col>
+    </ion-row>
+
+
+   <ion-row align-items-center>
+    <ion-col col-12 col-sm-6 col-md-3>
+      <div class="box">{{myText}}</div>
+    </ion-col>
+    <ion-col col-12 col-sm-6 col-md-3>
+       <div class="box" >
+         <input [(ngModel)]="name" >
+         {{name}}
+        </div>
+    </ion-col>
+    <ion-col col-12  col-sm-6 col-md-3 *ngIf="show" >
+       <div class="box">{{show}}</div>
+    </ion-col>
+    <ion-col col-12 col-sm-6 col-md-3 >
+      <div class="box" (click)="show = !show">Click me</div>
+    </ion-col>
+  </ion-row>
+
+  <h1>My First Attribute Directive</h1>
+  <p myHighlight>Highlight me!</p>
+
+  </ion-grid>-->
+</ion-content>
